@@ -1,8 +1,10 @@
-header h1 span {
-   font-size: 40px;
+header {
+   font-size: 25px;
    font-weight: bold;
+   display: flex;
+   justify-content: space-between;
 }
 
-#canvas {
-   display: inline-block;
+nav {
+   
 }
