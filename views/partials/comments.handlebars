@@ -1,8 +1,8 @@
 {{#each post.comments as |comment|}}
-   <div class="comment">
+   <article class="comment">
       <p class="comment-username">{{comment.username}}:</p>
       <p class="comment-body">{{comment.body}}</p>
-   </div>
+   </article>
 {{/each}}
 {{#if post.comments.length < 2}}
    <div class="add-comment">

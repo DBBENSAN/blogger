@@ -1,14 +1,12 @@
-<main>
-   {{#each userPost as |post|}}
-   <div class="post-card">
-      <h2 class="post-title">{{post.title}}</h2>
-      <div class="post-content">
-         <p class="post-body">{{post.body}}</p>
-         <p class="post-username">By: {{post.username}}</p>
-      </div>
-      <div class="comments-container">
-         {{> comments}}
-      </div>
+{{#each userPost as |post|}}
+<div class="post-card">
+   <h2 class="post-title">{{post.title}}</h2>
+   <div class="post-content">
+      <p class="post-body">{{post.body}}</p>
+      <p class="post-username">By: {{post.username}}</p>
    </div>
+   <div class="comments-container">
+      {{> comments}}
+   </div>
+</div>
 {{/each}}
-</main>
