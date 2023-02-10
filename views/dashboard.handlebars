@@ -1,12 +1,16 @@
-{{#each userPost as |post|}}
-<div>
-   <h2>Post Title</h2>
-   <div>
-      <p>Post Textarea</p>
-      <p>Time posted</p>
-      <div><button>Edit</button><button>Delete</button></div>
-   </div>
+<h2>Welcome to the Dashboard</h2>
 
+<div class="posts">
+  {{#each posts}}
+    <div class="post">
+      <h3 class="post-title">{{title}}</h3>
+      <p class="post-description">{{description}}</p>
+      <div class="actions">
+        <a href="/edit/{{_id}}">Edit</a>
+        <a href="/delete/{{_id}}">Delete</a>
+      </div>
+    </div>
+  {{/each}}
 </div>
 
-{{/each}}
+<a href="/create">Create New Post</a>

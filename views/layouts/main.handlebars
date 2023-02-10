@@ -16,12 +16,12 @@
 
 
   <nav>
-    <a href="/"><button>HOME</button></a>
-    <a href="/dashboard"><button>DASHBOARD</button></a>
+    <a href="/">HOME</a>
+    <a href="/api/dashboard">DASHBOARD</a>
     {{#if user}}
-    <a href="/logout"><button>LOGOUT</button></a>
+    <a href="/api/logout">LOGOUT</a>
     {{else}}
-    <a href="/login"><button>LOGIN</button></a>
+    <a href="/api/login">LOGIN</a>
     {{/if}}
   </nav>
   </header>
