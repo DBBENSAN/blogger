@@ -15,9 +15,8 @@ const PORT = process.env.PORT || 3001;
 const sess = {
   secret: 'insertKeyHereSmile',
   cookie: {
-    maxAge: 86400,
     httpOnly: true,
-    secure: true,
+    secure: false,
     sameSite: 'strict',
   },
   resave: false,

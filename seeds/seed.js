@@ -12,7 +12,7 @@ const seedDatabase = async () => {
   await seedPosts();
   await seedComments();
 
-
+  console.log('Database seeded!')
   process.exit(0);
 };
 
