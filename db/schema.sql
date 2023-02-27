@@ -1,4 +1,2 @@
--- Active: 1675885037793@@127.0.0.1@3306@blog_db
-DROP DATABASE IF EXISTS blog_db;
-
-CREATE DATABASE blog_db;
+DROP DATABASE IF EXISTS rooster_db;
+CREATE DATABASE rooster_db;

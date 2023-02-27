@@ -1,8 +1,8 @@
 const sequelize = require('../config/connection');
 
 const seedUsers = require('./userData');
-const seedPosts = require('./postData.json');
-const seedComments = require('./commentData.json');
+const seedPosts = require('./postData.js');
+const seedComments = require('./commentData.js');
 
 
 const seedDatabase = async () => {
@@ -12,7 +12,7 @@ const seedDatabase = async () => {
   await seedPosts();
   await seedComments();
 
-
+  console.log('Database seeded!')
   process.exit(0);
 };
 

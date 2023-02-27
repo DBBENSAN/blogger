@@ -12,18 +12,17 @@
 <body>
 
   <header>
-    <h1><span>r</span>00<span>ster</span></h1>
+    <h1><a href="/"><span>r</span>00<span>ster</span></a></h1>
 
 
-  <nav>
-    <a href="/">HOME</a>
-    <a href="/api/dashboard">DASHBOARD</a>
-    {{#if user}}
-    <a href="/api/logout">LOGOUT</a>
-    {{else}}
-    <a href="/api/login">LOGIN</a>
-    {{/if}}
-  </nav>
+      <nav>
+        <a href="/dashboard">Dashboard</a> |
+        {{#if logged_in}}
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
   </header>
 
   <main class="container container-fluid mt-5">
@@ -33,7 +32,6 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-  <script src="/js/eyes.js"
 </body>
 
 
